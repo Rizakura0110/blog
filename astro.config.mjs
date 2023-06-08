@@ -8,6 +8,5 @@ export default defineConfig({
   // Your final, deployed URL
   site: 'https://www.my-site.dev',
   // The base path to deploy to
-  base: '/foo',
   integrations: [sitemap(), purgecss(), compress()],
 });
