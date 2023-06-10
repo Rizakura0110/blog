@@ -54,11 +54,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover,
-a:focus {
-  background-color: #ff9776;
-}
-
 .expanded {
   display: unset;
 }
@@ -89,4 +84,16 @@ html.dark {
 
 .dark .nav-links a {
   color: #fff;
+}
+
+ul{
+  padding-left:0;
+}
+
+li{
+  list-style:none;
+}
+
+a,a:visited{
+  color: #0071d1;
 }
