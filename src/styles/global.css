@@ -17,22 +17,8 @@ body {
 
 h1 {
   margin: 1rem 0;
-  font-size: 2.5rem;
-}
-
-/* nav styles */
-
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .nav-links {
@@ -92,8 +78,13 @@ ul{
 
 li{
   list-style:none;
+  padding: 15px 0;
 }
 
 a,a:visited{
   color: #0071d1;
+}
+
+main {
+  max-width: 60ch;
 }
