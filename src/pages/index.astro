@@ -4,7 +4,7 @@ const pageTitle = "りざくらのざれごと";
 
 //microCMS呼び出し
 import { getBlogs } from "../library/microcms";
-const response = await getBlogs({ fields: ["id", "title"] });
+const response = await getBlogs({ fields: ["id", "title", "publishedAt"] });
 ---
 <BaseLayout pageTitle={pageTitle}>
   <main>
@@ -12,7 +12,8 @@ const response = await getBlogs({ fields: ["id", "title"] });
       {
         response.contents.map((content: any) => (
           <li>
-            <a href={content.id}>{content.title}</a>
+            <p class="listPublishedAt">{new Date(content.publishedAt).toISOString().split('T')[0]}</p>
+            <a class= "blogLink" href={content.id}>{content.title}</a>
           </li>
         ))
       }
